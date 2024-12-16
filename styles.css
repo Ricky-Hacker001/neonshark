@@ -109,6 +109,7 @@ body {
   color: #0c0c10;
 }
 
+
 /* Video Section */
 .video-section {
   margin: auto;
@@ -1753,3 +1754,88 @@ opacity: 0.6;
   filter: blur(135.885px);
 }
 
+
+
+/* dec */
+.hedecc{
+  /* Ellipse 2 */
+
+position: absolute;
+width: 284px;
+height: 284px;
+left: -228px;
+top: 261px;
+
+background: rgba(36, 107, 253, 0.2);
+filter: blur(135.885px);
+
+}
+.hedecc1{
+  /* Ellipse 4 */
+
+position: absolute;
+width: 1706px;
+height: 233px;
+left: 163px;
+top: 400px;
+
+background: rgba(36, 107, 253, 0.12);
+filter: blur(135.885px);
+
+}
+.whydec{
+  /* Ellipse 3 */
+
+position: absolute;
+width: 284px;
+height: 284px;
+left: 1396px;
+top: 1316px;
+
+background: rgba(36, 107, 253, 0.2);
+filter: blur(135.885px);
+z-index: -1;
+}
+
+.whatdec{
+/* Ellipse 5 */
+
+position: absolute;
+width: 284px;
+height: 284px;
+left: -142px;
+top: 1953px;
+
+background: rgba(36, 107, 253, 0.2);
+filter: blur(135.885px);
+   
+}
+.whatdec1{
+  /* Ellipse 6 */
+
+position: absolute;
+width: 284px;
+height: 284px;
+left: 1509px;
+top: 2702px;
+
+background: rgba(36, 107, 253, 0.16);
+opacity: 0.6;
+filter: blur(135.885px);
+
+}
+
+.whatdec2{
+  /* Ellipse 9 */
+
+position: absolute;
+width: 284px;
+height: 284px;
+left: -272px;
+top: 3102px;
+
+background: rgba(36, 107, 253, 0.5);
+opacity: 0.6;
+filter: blur(135.885px);
+
+}
