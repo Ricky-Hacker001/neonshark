@@ -5,10 +5,6 @@ body {
   background-color: #0c0c10;
   color: white;
   font-family: Arial, sans-serif;
-
-
-
-
 }
 /* Custom Navbar */
 
@@ -123,11 +119,8 @@ body {
   border-radius: 8px;
 }
 
-/* Heading Visibility for Desktop */
 .heading-desktop {
   display: block;
-  /* width: 854px; */
-  /* height: 58px; */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -159,8 +152,6 @@ body {
   color: #91B5FE;
 }
 
-
-/* Media Queries for Mobile and Tablet */
 @media (max-width: 768px) {
   .heading-desktop {
     display: none;
@@ -171,6 +162,15 @@ body {
   .hero-section h1 {
     font-size: 1.8rem;
   }
+  .hero-section .heading{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #ABAEB3;
+  }
 }
 @media (max-width: 360px) {
   .hero-section h1 {
@@ -178,6 +178,42 @@ body {
   }
   .btn-primary, .btn-secondary {
     font-size: 0.9rem;
+  }
+  .hero-section .heading{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size:16px;
+    line-height: 120%;
+    text-align: center;
+  }
+  .hero-section .btn-secondary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    width: 156px;
+    height: 48px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+  .hero-section .btn-primary{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 80px;
+    gap: 10px;
+    width: 156px;
+    height: 48px;
+    background: #92B5FE;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
   }
 }
 
@@ -197,7 +233,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Why Master Power BI? */
 .why-master-desktop {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -210,7 +245,6 @@ body {
 
 
 
-/* Cards Section */
 .frame-742 .card {
   width: 100%;
   height: auto;
@@ -219,7 +253,6 @@ body {
   flex-grow: 0;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .why-master-desktop {
     display: none;
@@ -250,7 +283,6 @@ body {
   margin: 40px auto;
 }
 
-/* Individual Card */
 .card-frame {
   box-sizing: border-box;
   display: flex;
@@ -271,7 +303,6 @@ body {
   color: white;
 }
 
-/* Icon Placeholder */
 .icon-placeholder {
   width: 80px;
   height: 80px;
@@ -280,7 +311,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* Content inside Card */
 .card-content {
   display: flex;
   flex-direction: column;
@@ -290,7 +320,6 @@ body {
   height: auto;
 }
 
-/* Heading */
 .card-content h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -360,7 +389,6 @@ body {
   color: #ABAEB3;
 }
 
-/* Curriculum Section Container */
 .curriculum-section-parts {
   position: relative;
   width: 100%;
@@ -368,18 +396,15 @@ body {
   text-align: center;
 }
 
-/* Cards Container */
 .curriculum-section .cards-container {
   display: flex;
-  flex-wrap: wrap; /* Allows cards to wrap to the next row on smaller screens */
-  justify-content: center; /* Centers the cards horizontally */
+  flex-wrap: wrap; 
+  justify-content: center; 
   align-items: flex-start;
   gap: 24px;
   padding: 0;
 }
 
-/* Main Card */
-/* Curriculum Section Container */
 .curriculum-section-parts {
   position: relative;
   width: 100%;
@@ -387,11 +412,10 @@ body {
   text-align: center;
 }
 
-/* Cards Container */
 .curriculum-section .cards-container {
   display: flex;
-  flex-wrap: wrap; /* Allows cards to wrap to the next row on smaller screens */
-  justify-content: flex-start; /* Aligns the cards to the left */
+  flex-wrap: wrap;
+  justify-content: flex-start; 
   align-items: flex-start;
   gap: 24px;
   padding: 0;
@@ -458,33 +482,56 @@ body {
 /* For Laptop (1440px and smaller) */
 @media (max-width: 1440px) {
   .curriculum-section .cards-container {
-    justify-content: flex-start; /* Aligns cards to the left */
+    justify-content: flex-start;
   }
 
   .curriculum-section .card,
   .curriculum-section .card-main {
-    width: 193px; /* Maintain width on large screens */
+    width: 193px; 
   }
 }
 
-/* For Tablets (744px and smaller) */
+
 @media (max-width: 744px) {
+  .curriculum-section .cards-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 16px; 
+    padding: 0 10px;
+    align-items: center;
+  }
+
   .curriculum-section .card,
   .curriculum-section .card-main {
-    width: calc(50% - 24px); /* 2 cards per row */
+    width: 50%; 
+    max-width: 110px; 
   }
 
-  .curriculum-section .cards-container {
-    gap: 16px;
-    padding: 0 10px; /* Adjust padding */
+  .curriculum-section .card-main h4,
+  .curriculum-section .card h4 {
+    text-align: center;
   }
+
+
+  .curriculum-section .heading{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #ABAEB3;
+    }
+      
 }
 
-/* For Mobile (360px and smaller) */
+
 @media (max-width: 360px) {
   .curriculum-section .card,
   .curriculum-section .card-main {
-    width: calc(100% - 20px); /* 1 card per row */
+    width: 50%; 
+    max-width: 80px;
+    max-height: 30px;
   }
 
   .curriculum-section .cards-container {
@@ -493,8 +540,18 @@ body {
   }
 
   .curriculum-section .card h4 {
-    font-size: 14px; /* Smaller font size for mobile */
+    margin-top: 10px;
+    font-size: 12px;
   }
+  .curriculum-section .heading{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size:16px;
+    line-height: 120%;
+    text-align: center;
+    
+      }
 }
 
 /* Other Cards */
@@ -669,6 +726,25 @@ body {
   .left-section, .right-section {
       width: 100%;
   }
+  .content-section .left-heading{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 120%;
+color: #F5F8FF;
+
+  }
+}
+@media (max-width: 360px){
+.content-section .left-heading{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+color: #F5F8FF;
+    }
 }
 
 .right-section::-webkit-scrollbar {
@@ -695,10 +771,10 @@ body {
 /* Overall Cards Section */
 .info-cards-section {
   display: flex;
-  flex-wrap: wrap; /* Allows cards to wrap onto new rows */
-  justify-content: center; /* Centers cards horizontally */
+  flex-wrap: wrap; 
+  justify-content: center; 
   align-items: flex-start;
-  gap: 24px; /* Spacing between cards */
+  gap: 24px; 
   padding: 0;
   max-width: 1280px;
   margin: 50px auto;
@@ -746,37 +822,34 @@ body {
 
 /* Responsive Design */
 
-/* For Laptop (1440px and smaller) */
 @media (max-width: 1440px) {
   .info-card {
-    width: calc(25% - 24px); /* 4 cards in one row */
+    width: calc(25% - 24px); 
   }
 }
 
-/* For Tablets (744px and smaller) */
 @media (max-width: 744px) {
   .info-card {
-    width: calc(50% - 16px); /* 2 cards per row */
+    width: calc(50% - 16px); 
   }
 
   .info-cards-section {
-    gap: 16px; /* Adjust gap for smaller screens */
+    gap: 16px;
     padding: 0 10px;
   }
 }
 
-/* For Mobile (360px and smaller) */
 @media (max-width: 360px) {
   .info-card {
-    width: calc(50% - 12px); /* 2 cards per row */
+    width: calc(50% - 12px); 
   }
 
   .info-cards-section {
-    gap: 12px; /* Smaller gap for small screens */
+    gap: 12px; 
   }
 
   .info-card-heading {
-    font-size: 36px; /* Smaller font size for mobile */
+    font-size: 36px; 
   }
 
   .info-card-para {
@@ -794,14 +867,10 @@ font-style: normal;
 font-weight: 700;
 font-size: 48px;
 line-height: 120%;
-/* identical to box height, or 58px */
+
 text-align: center;
 
-/* Neutral color/10% */
 color: #F5F8FF;
-
-
-/* Inside auto layout */
 flex: none;
 order: 0;
 flex-grow: 0;
@@ -810,9 +879,9 @@ flex-grow: 0;
 
 .achievements-carousel {
   position: relative;
-  overflow: hidden; /* Hides content that overflows */
-  width: 100%; /* Full width */
-  height: 432px; /* Container height */
+  overflow: hidden; 
+  width: 100%;
+  height: 432px;
 }
 
 
@@ -824,7 +893,7 @@ flex-grow: 0;
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(411px * 5 + 24px * 4); /* 5 cards with gaps between them */
+  width: calc(411px * 5 + 24px * 4); 
 }
 
 
@@ -833,7 +902,7 @@ flex-grow: 0;
       transform: translateX(0);
   }
   100% {
-      transform: translateX(-100%); /* Adjust based on card count and width */
+      transform: translateX(-100%);
   }
 }
 .carousel-card {
@@ -846,7 +915,7 @@ flex-grow: 0;
   flex: none;
   position: relative;
   margin-top: 80px;
-  margin-right: 24px; /* Optional for spacing between cards */
+  margin-right: 24px; 
 }
 
 
@@ -931,12 +1000,12 @@ flex-grow: 0;
 
 @media (max-width: 744px) {
   .carousel-track {
-      gap: 16px; /* Reduce space between cards */
+      gap: 16px; 
   }
 
   .carousel-card {
-      width: 300px; /* Reduce card width */
-      height: 280px; /* Adjust height proportionally */
+      width: 300px; 
+      height: 280px; 
   }
 
   .circle {
@@ -946,8 +1015,8 @@ flex-grow: 0;
   }
 
   .card-text {
-      width: 250px; /* Shrink text container */
-      top: 160px; /* Adjust position */
+      width: 250px; 
+      top: 160px; 
   }
 
   .card-heading {
@@ -961,7 +1030,7 @@ flex-grow: 0;
 
 @media (max-width: 360px) {
   .carousel-track {
-      gap: 12px; /* Further reduce spacing */
+      gap: 12px; 
   }
 
   .carousel-card {
@@ -991,9 +1060,7 @@ flex-grow: 0;
 
 
 /* certification */
-/* Certification Section */
 
-/* General Section Styles */
 .cert-section {
   margin: 0 auto;
   padding: 20px;
@@ -1047,20 +1114,20 @@ flex-grow: 0;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  width: 100%; /* Ensures the points section spans the full width of the left section */
+  width: 100%;
 }
 
 .point {
   display: flex;
   align-items: flex-start;
-  gap: 15px; /* Slightly increased spacing for better readability */
+  gap: 15px; 
   width: 100%;
 }
 
 .point span {
   font-size: 18px;
   color: #04D5FF;
-  flex-shrink: 0; /* Prevents the icon from shrinking */
+  flex-shrink: 0;
 }
 
 .point p {
@@ -1068,8 +1135,8 @@ flex-grow: 0;
   font-size: 16px;
   line-height: 150%;
   color: #F5F8FF;
-  width: calc(100% - 30px); /* Ensures the text uses the remaining space next to the icon */
-  word-wrap: break-word; /* Ensures long text breaks into multiple lines */
+  width: calc(100% - 30px); 
+  word-wrap: break-word; 
 }
 /* Right Section */
 .cert-right-section {
@@ -1084,7 +1151,6 @@ flex-grow: 0;
 
 /* Responsive Design */
 
-/* Large Screens (1440px and up) */
 @media (min-width: 1440px) {
   .cert-content-section {
     gap: 100px;
@@ -1099,7 +1165,6 @@ flex-grow: 0;
   }
 }
 
-/* Tablets (744px and smaller) */
 @media (max-width: 744px) {
   .cert-content-section {
     flex-direction: column-reverse;
@@ -1128,7 +1193,6 @@ flex-grow: 0;
   }
 }
 
-/* Mobile Phones (360px and smaller) */
 @media (max-width: 360px) {
   .cert-content-section {
     gap: 20px;
@@ -1160,9 +1224,6 @@ flex-grow: 0;
   }
 }
 
-
-
-/* Large Screens (1440px and up) */
 @media (min-width: 1440px) {
   .points-section {
     gap: 20px;
@@ -1173,7 +1234,6 @@ flex-grow: 0;
   }
 }
 
-/* Tablets (744px and smaller) */
 @media (max-width: 744px) {
   .points-section {
     gap: 15px;
@@ -1184,7 +1244,6 @@ flex-grow: 0;
   }
 }
 
-/* Mobile Phones (360px and smaller) */
 @media (max-width: 360px) {
   .points-section {
     gap: 10px;
@@ -1203,7 +1262,6 @@ flex-grow: 0;
 }
 
 .abt h1 {
-  /* position: absolute; */
   right: 265px;
   bottom: 770px;
   font-family: 'Montserrat', sans-serif;
@@ -1271,7 +1329,6 @@ flex-grow: 0;
   border-radius: 25px;
 }
 
-/* Make sure the section is responsive */
 @media (max-width: 1200px) {
   #why-learn-with-us h1 {
       font-size: 36px;
@@ -1308,7 +1365,6 @@ flex-grow: 0;
 
 
 /* pricing */
-/* General Styles */
 #pricing-section h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -1338,13 +1394,11 @@ flex-grow: 0;
   background-color: #FF9300;
 }
 
-/* Badge Styling */
 .badge {
   font-size: 14px;
   font-weight: 500;
 }
 
-/* Pricing Section */
 .old-price {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
@@ -1357,7 +1411,6 @@ flex-grow: 0;
   color: #F5F8FF;
 }
 
-/* Button Styling */
 .btn-purple {
   background-color: #6E40FF;
   color: #fff;
@@ -1409,14 +1462,11 @@ flex-grow: 0;
 
 
 /* bg drak */
-/* General Section Styles */
-/* General Section Styles */
 #refer-earn {
   background-color: #0F1F40;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 0 20px; Add left and right padding */
   width: 80%;
   height: auto;
 }
@@ -1424,17 +1474,15 @@ flex-grow: 0;
 .bg-dark-blue {
   background-color: #0F1F40;
   position: relative;
-  /* padding: 40px; */
   border-radius: 40px;
   max-width: 1280px;
   margin: 0 auto;
   overflow: hidden;
 }
 
-/* Add left-right margins for larger screens */
 @media (min-width: 1024px) {
   .bg-dark-blue {
-    margin: 0 40px; /* Left and right margins */
+    margin: 0 40px; 
   }
 }
 
@@ -1558,7 +1606,6 @@ flex-grow: 0;
 
 
 /* faq */
-/* curriculum */
 .faq-title {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -1584,7 +1631,6 @@ flex-grow: 0;
 width: 626px;
 height: 48px;
 
-/* Website/text/Regular/regular */
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -1595,7 +1641,6 @@ color: #F5F8FF;
 opacity: 0.6;
 }
 
-    /* Curriculum Section Container */
 .faq-section-parts {
   position: relative;
   width: 100%;
@@ -1613,7 +1658,7 @@ opacity: 0.6;
   padding: 20px;
   margin: 0 auto;
   max-width: 100%;
-  width: 845px; /* Default width for large screens */
+  width: 845px; 
 }
 
 /* FAQ Card Styles */
@@ -1635,7 +1680,6 @@ opacity: 0.6;
   border-color: #04D5FF;
 }
 
-/* FAQ Text Styles */
 .faq-text {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -1647,7 +1691,6 @@ opacity: 0.6;
   flex: 1;
 }
 
-/* FAQ Icon Styles */
 .faq-icon {
   width: 32px;
   height: 32px;
@@ -1668,7 +1711,6 @@ opacity: 0.6;
 
 /* Responsive Design */
 
-/* For larger screens (1440px and up) */
 @media (min-width: 1440px) {
   .faq-section {
     width: 60%;
@@ -1683,7 +1725,6 @@ opacity: 0.6;
   }
 }
 
-/* For tablets (744px and smaller) */
 @media (max-width: 744px) {
   .faq-section {
     width: 90%;
@@ -1705,7 +1746,6 @@ opacity: 0.6;
   }
 }
 
-/* For mobile phones (360px and smaller) */
 @media (max-width: 360px) {
   .faq-section {
     width: 100%;
@@ -1758,7 +1798,6 @@ opacity: 0.6;
 
 /* dec */
 .hedecc{
-  /* Ellipse 2 */
 
 position: absolute;
 width: 284px;
@@ -1771,7 +1810,6 @@ filter: blur(135.885px);
 
 }
 .hedecc1{
-  /* Ellipse 4 */
 
 position: absolute;
 width: 1706px;
@@ -1784,7 +1822,6 @@ filter: blur(135.885px);
 
 }
 .whydec{
-  /* Ellipse 3 */
 
 position: absolute;
 width: 284px;
@@ -1798,7 +1835,6 @@ z-index: -1;
 }
 
 .whatdec{
-/* Ellipse 5 */
 
 position: absolute;
 width: 284px;
@@ -1811,7 +1847,6 @@ filter: blur(135.885px);
    
 }
 .whatdec1{
-  /* Ellipse 6 */
 
 position: absolute;
 width: 284px;
@@ -1826,7 +1861,6 @@ filter: blur(135.885px);
 }
 
 .whatdec2{
-  /* Ellipse 9 */
 
 position: absolute;
 width: 284px;
@@ -1841,8 +1875,6 @@ filter: blur(135.885px);
 }
 
 .achivdec{
-/* Ellipse 7 */
-
 position: absolute;
 width: 284px;
 height: 284px;
@@ -1855,7 +1887,6 @@ filter: blur(135.885px);
 
 }
 .achivdec1{
-  /* Ellipse 8 */
 
 position: absolute;
 width: 284px;
@@ -1870,7 +1901,6 @@ filter: blur(135.885px);
 }
 
 .certdec{
-  /* Ellipse 16 */
 
 position: absolute;
 width: 284px;
@@ -1884,7 +1914,6 @@ filter: blur(135.885px);
 
 }
 .earndec{
-/* Ellipse 13 */
 
 position: absolute;
 width: 284px;
@@ -1900,7 +1929,6 @@ filter: blur(135.885px);
 
 @media (min-width: 1440px) {
   .hedecc{
-    /* Ellipse 2 */
   
   position: absolute;
   width: 284px;
@@ -1913,7 +1941,6 @@ filter: blur(135.885px);
   
   }
   .hedecc1{
-    /* Ellipse 4 */
   
   position: absolute;
   width: 1206px;
@@ -1926,7 +1953,6 @@ filter: blur(135.885px);
   
   }
   .whydec{
-    /* Ellipse 3 */
   
   position: absolute;
   width: 284px;
@@ -1940,7 +1966,6 @@ filter: blur(135.885px);
   }
   
   .whatdec{
-  /* Ellipse 5 */
   
   position: absolute;
   width: 284px;
@@ -1953,7 +1978,6 @@ filter: blur(135.885px);
      
   }
   .whatdec1{
-    /* Ellipse 6 */
   
   position: absolute;
   width: 284px;
@@ -1968,7 +1992,6 @@ filter: blur(135.885px);
   }
   
   .whatdec2{
-    /* Ellipse 9 */
   
   position: absolute;
   width: 284px;
@@ -1983,7 +2006,6 @@ filter: blur(135.885px);
   }
   
   .achivdec{
-  /* Ellipse 7 */
   
   position: absolute;
   width: 284px;
@@ -1997,7 +2019,6 @@ filter: blur(135.885px);
   
   }
   .achivdec1{
-    /* Ellipse 8 */
   
   position: absolute;
   width: 284px;
@@ -2012,7 +2033,6 @@ filter: blur(135.885px);
   }
   
   .certdec{
-    /* Ellipse 16 */
   
   position: absolute;
   width: 284px;
@@ -2026,7 +2046,6 @@ filter: blur(135.885px);
   
   }
   .earndec{
-  /* Ellipse 13 */
   
   position: absolute;
   width: 284px;
@@ -2041,20 +2060,16 @@ filter: blur(135.885px);
   
 }
 
-
-
-
-/* For tablets (744px and smaller) */
 @media (max-width: 744px) {
   .hedecc{
   width: 284px;
   height: 284px;
   left: -228px;
   top: 261px;
-  }
-  .hedecc1{
-  width: 406px;
-  height: 233px;
+}
+.hedecc1{
+width: 406px;
+height: 233px;
   left: 163px;
   top: 400px;
   }
@@ -2068,8 +2083,9 @@ filter: blur(135.885px);
   .whatdec{
   width: 284px;
   height: 284px;
-  left: 396px;
-  top: 1953px;     
+  left: 16px;
+  top: 1953px;
+  z-index: -1;     
   }
   .whatdec1{
   width: 284px;
@@ -2117,7 +2133,6 @@ filter: blur(135.885px);
 
 
 
-/* For mobile phones (360px and smaller) */
 @media (max-width: 360px) {
   .hedecc{
     width: 284px;
