@@ -1839,3 +1839,345 @@ opacity: 0.6;
 filter: blur(135.885px);
 
 }
+
+.achivdec{
+/* Ellipse 7 */
+
+position: absolute;
+width: 284px;
+height: 284px;
+left: -182px;
+top: 4073px;
+
+background: rgba(36, 107, 253, 0.24);
+opacity: 0.6;
+filter: blur(135.885px);
+
+}
+.achivdec1{
+  /* Ellipse 8 */
+
+position: absolute;
+width: 284px;
+height: 284px;
+left: 1545px;
+top: 4751px;
+z-index: -1;
+background: rgba(36, 107, 253, 0.2);
+opacity: 0.6;
+filter: blur(135.885px);
+
+}
+
+.certdec{
+  /* Ellipse 16 */
+
+position: absolute;
+width: 284px;
+height: 284px;
+left: 1521px;
+top: 5544px;
+z-index: -1;
+background: rgba(36, 107, 253, 0.2);
+opacity: 0.6;
+filter: blur(135.885px);
+
+}
+.earndec{
+/* Ellipse 13 */
+
+position: absolute;
+width: 284px;
+height: 284px;
+left: -167px;
+top: 8096px;
+
+background: rgba(36, 107, 253, 0.2);
+filter: blur(135.885px);
+
+}
+
+
+@media (min-width: 1440px) {
+  .hedecc{
+    /* Ellipse 2 */
+  
+  position: absolute;
+  width: 284px;
+  height: 284px;
+  left: -228px;
+  top: 261px;
+  
+  background: rgba(36, 107, 253, 0.2);
+  filter: blur(135.885px);
+  
+  }
+  .hedecc1{
+    /* Ellipse 4 */
+  
+  position: absolute;
+  width: 1206px;
+  height: 233px;
+  left: 163px;
+  top: 400px;
+  
+  background: rgba(36, 107, 253, 0.12);
+  filter: blur(135.885px);
+  
+  }
+  .whydec{
+    /* Ellipse 3 */
+  
+  position: absolute;
+  width: 284px;
+  height: 284px;
+  left: 1096px;
+  top: 1316px;
+  
+  background: rgba(36, 107, 253, 0.2);
+  filter: blur(135.885px);
+  z-index: -1;
+  }
+  
+  .whatdec{
+  /* Ellipse 5 */
+  
+  position: absolute;
+  width: 284px;
+  height: 284px;
+  left: 1016px;
+  top: 1953px;
+  
+  background: rgba(36, 107, 253, 0.2);
+  filter: blur(135.885px);
+     
+  }
+  .whatdec1{
+    /* Ellipse 6 */
+  
+  position: absolute;
+  width: 284px;
+  height: 284px;
+  left: 1109px;
+  top: 2702px;
+  
+  background: rgba(36, 107, 253, 0.16);
+  opacity: 0.6;
+  filter: blur(135.885px);
+  
+  }
+  
+  .whatdec2{
+    /* Ellipse 9 */
+  
+  position: absolute;
+  width: 284px;
+  height: 284px;
+  left: -272px;
+  top: 3102px;
+  
+  background: rgba(36, 107, 253, 0.5);
+  opacity: 0.6;
+  filter: blur(135.885px);
+  
+  }
+  
+  .achivdec{
+  /* Ellipse 7 */
+  
+  position: absolute;
+  width: 284px;
+  height: 284px;
+  left: -182px;
+  top: 4073px;
+  
+  background: rgba(36, 107, 253, 0.24);
+  opacity: 0.6;
+  filter: blur(135.885px);
+  
+  }
+  .achivdec1{
+    /* Ellipse 8 */
+  
+  position: absolute;
+  width: 284px;
+  height: 284px;
+  left: 1096px;
+  top: 4751px;
+  z-index: -1;
+  background: rgba(36, 107, 253, 0.2);
+  opacity: 0.6;
+  filter: blur(135.885px);
+  
+  }
+  
+  .certdec{
+    /* Ellipse 16 */
+  
+  position: absolute;
+  width: 284px;
+  height: 284px;
+  left: 1121px;
+  top: 5544px;
+  z-index: -1;
+  background: rgba(36, 107, 253, 0.2);
+  opacity: 0.6;
+  filter: blur(135.885px);
+  
+  }
+  .earndec{
+  /* Ellipse 13 */
+  
+  position: absolute;
+  width: 284px;
+  height: 284px;
+  left: -167px;
+  top: 8096px;
+  
+  background: rgba(36, 107, 253, 0.2);
+  filter: blur(135.885px);
+  
+  }
+  
+}
+
+
+
+
+/* For tablets (744px and smaller) */
+@media (max-width: 744px) {
+  .hedecc{
+  width: 284px;
+  height: 284px;
+  left: -228px;
+  top: 261px;
+  }
+  .hedecc1{
+  width: 406px;
+  height: 233px;
+  left: 163px;
+  top: 400px;
+  }
+  .whydec{
+  width: 284px;
+  height: 284px;
+  left: 396px;
+  top: 1316px;
+  }
+  
+  .whatdec{
+  width: 284px;
+  height: 284px;
+  left: 396px;
+  top: 1953px;     
+  }
+  .whatdec1{
+  width: 284px;
+  height: 284px;
+  left: 396px;
+  top: 2702px;  
+  }
+  
+  .whatdec2{
+  width: 284px;
+  height: 284px;
+  left: -272px;
+  top: 3102px;
+  }
+  
+  .achivdec{
+  width: 284px;
+  height: 284px;
+  left: -182px;
+  top: 4073px;
+  }
+  .achivdec1{
+  width: 284px;
+  height: 284px;
+  left: 396px;
+  top: 4751px;  
+  }
+  
+  .certdec{
+  width: 284px;
+  height: 284px;
+  left: 396px;
+  top: 5544px;  
+  }
+  .earndec{
+  width: 284px;
+  height: 284px;
+  left: -167px;
+  top: 8096px;  
+  }  
+}
+
+
+
+
+
+
+/* For mobile phones (360px and smaller) */
+@media (max-width: 360px) {
+  .hedecc{
+    width: 284px;
+    height: 284px;
+    left: -228px;
+    top: 261px;
+    }
+    .hedecc1{
+      display: none;
+    }
+    .whydec{
+    width: 184px;
+    height: 184px;
+    left: 100px;
+    top: 1316px;
+    }
+    
+    .whatdec{
+      width: 184px;
+      height: 184px;
+      left: 100px;
+    top: 1953px;     
+    }
+    .whatdec1{
+      width: 184px;
+      height: 184px;
+      left: 100px;
+    top: 2702px;  
+    }
+    
+    .whatdec2{
+      width: 184px;
+      height: 184px;
+    left: -72px;
+    top: 3102px;
+    }
+    
+    .achivdec{
+    width: 184px;
+    height: 184px;
+    left: -82px;
+    top: 4073px;
+    }
+    .achivdec1{
+    width: 184px;
+    height: 184px;
+    left: 100px;
+    top: 4751px;  
+    }
+    
+    .certdec{
+      width: 184px;
+      height: 184px;
+    left: 100px;
+    top: 5544px;  
+    }
+    .earndec{
+      width: 184px;
+      height: 184px;
+    left: -167px;
+    top: 8096px;  
+    }  
+}
