@@ -6,47 +6,13 @@
     <title>Responsive Power BI Course Website</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <style>
         
 </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-2 px-sm-4 px-md-5 px-lg-5 py-3 py-sm-3 py-md-3 py-lg-3">
-        <div class="container-fluid">
-            <!-- LOGO -->
-            <a class="navbar-brand" href="#">LOGO</a>
-            <!-- Button for Mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navbar Links and Buttons -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item ms-4">
-                        <a class="nav-link" href="#">Introduction</a>
-                    </li>
-                    <li class="nav-item ms-4">
-                        <a class="nav-link" href="#">Curriculum</a>
-                    </li>
-                    <li class="nav-item ms-4">
-                        <a class="nav-link" href="#">Certification</a>
-                    </li>
-                    <li class="nav-item ms-4">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item ms-4">
-                        <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                </ul>
-                <!-- Buttons -->
-                <div class="d-flex ms-3">
-                    <button class="btn btn-login me-4">Login</button>
-                    <button class="btn btn-enroll">Enroll Now!</button>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php include('includes/navbar.php'); ?>
     
     <!-- Hero Section -->
     <section class="hero-section container text-center">
